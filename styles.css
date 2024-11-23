@@ -183,9 +183,6 @@ body.dark-mode .menu a:hover {
     display: flex; /* Muestra el menú cuando se activa */
   }
 
-  .logo-container img {
-    height: 40px; /* Reduce el tamaño del logo */
-  }
   .logo-container img:nth-child(2) {
     display: none; /* Oculta la segunda imagen */
   }

@@ -186,6 +186,9 @@ body.dark-mode .menu a:hover {
   .logo-container img {
     height: 40px; /* Reduce el tamaño del logo */
   }
+  .logo-container img:nth-child(2) {
+    display: none; /* Oculta la segunda imagen */
+  }
 }
 
 /* Modo oscuro: menú desplegable */

@@ -182,6 +182,10 @@ body.dark-mode .menu a:hover {
   .menu.show {
     display: flex; /* Muestra el menú cuando se activa */
   }
+
+  .logo-container img {
+    height: 40px; /* Reduce el tamaño del logo */
+  }
 }
 
 /* Modo oscuro: menú desplegable */

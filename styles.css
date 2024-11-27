@@ -489,3 +489,76 @@ body.dark-mode .footer {
   transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* LOGIN */
+/* Página de Login */
+.login-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.login-page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+/* Opciones de Login */
+.login-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Hace que los formularios se ajusten en pantallas pequeñas */
+}
+
+.login-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.login-card h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.login-card label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #0056b3;
+}

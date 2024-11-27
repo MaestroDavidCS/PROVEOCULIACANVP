@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="proveedores.html">Proveedores</a></li>
+      <li><a href="proveedores.html">Nuestros Clientes</a></li>
+      <li><a href="catalogos.html">Catálogos Online</a></li>
+      <li><a href="categorias.html">Categorías</a></li>
+    </ul>
+  </nav>
+
+  <!-- Formulario de Login -->
+  <main class="login-page">
+    <h1>Iniciar Sesión</h1>
+    <div class="login-options">
+      <!-- Login para Emprendedor -->
+      <div class="login-card">
+        <h2>Emprendedor</h2>
+        <form action="emprendedor-dashboard.html" method="post">
+          <label for="emprendedor-email">Correo Electrónico</label>
+          <input type="email" id="emprendedor-email" name="email" required>
+
+          <label for="emprendedor-password">Contraseña</label>
+          <input type="password" id="emprendedor-password" name="password" required>
+
+          <button type="submit">Ingresar</button>
+        </form>
+      </div>
+
+      <!-- Login para Proveedor -->
+      <div class="login-card">
+        <h2>Proveedor</h2>
+        <form action="proveedor-dashboard.html" method="post">
+          <label for="proveedor-email">Correo Electrónico</label>
+          <input type="email" id="proveedor-email" name="email" required>
+
+          <label for="proveedor-password">Contraseña</label>
+          <input type="password" id="proveedor-password" name="password" required>
+
+          <button type="submit">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 PROVEOCULIACÁN. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

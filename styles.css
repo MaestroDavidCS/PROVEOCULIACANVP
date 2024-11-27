@@ -416,6 +416,15 @@ body.dark-mode .footer {
   font-size: 14px;
   color: #666;
 }
+.provider-item a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  display: inline-block; /* Asegura que el enlace sea solo el logo */
+  transition: transform 0.3s ease; /* Añade una animación al hacer hover */
+}
+
+.provider-item a:hover img {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
 
 .provider-logo {
   width: 80px; /* Ajusta el tamaño del logo */
@@ -424,4 +433,59 @@ body.dark-mode .footer {
   margin: 0 auto 10px; /* Centra el logo y añade un margen inferior */
   border-radius: 10px; /* Opcional: hace las esquinas redondeadas */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: añade un efecto de sombra */
+}
+
+
+/* Contenedor de categorías */
+.categories {
+  padding: 20px;
+  text-align: center;
+}
+
+.categories h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333333;
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* Lista de categorías */
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que las categorías se ajusten en filas si es necesario */
+  gap: 20px; /* Espaciado entre categorías */
+}
+
+.category-item {
+  flex: 1 1 calc(25% - 20px); /* Ocupa el 25% del ancho menos el espaciado */
+  max-width: 300px; /* Limita el ancho máximo de cada categoría */
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-item img {
+  width: 100%; /* Imagen se ajusta al contenedor */
+  height: 180px; /* Define una altura fija */
+  object-fit: cover; /* Recorta la imagen sin deformarla */
+}
+
+.category-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #007bff;
+}
+
+.category-item:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }

@@ -2,10 +2,10 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s, color 0.3s;
+  padding-top: 60px; /* Añade un margen para evitar que el contenido quede debajo de la barra */
 }
 
 .header {
@@ -93,6 +93,10 @@ body.dark-mode .btn:hover {
 /* INICIA BARRA DE NAVEGACIÓN */
 /* Barra de navegación */
 .navbar {
+  position: fixed; /* Fija la barra de navegación */
+  top: 0; /* La coloca en la parte superior */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  z-index: 1000; /* Mantiene la barra por encima de otros elementos */
   background-color: #f8f9fa;
   border-bottom: 2px solid #e0e0e0;
   padding: 5px 15px;
@@ -201,6 +205,18 @@ body.dark-mode .menu a {
 body.dark-mode .menu a:hover {
   color: #bbbbbb; /* Letras en gris claro al pasar el mouse */
 }
+.navbar {
+  position: fixed; /* Fija la barra de navegación */
+  top: 0; /* La coloca en la parte superior */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  z-index: 1000; /* Mantiene la barra por encima de otros elementos */
+  background-color: #f8f9fa; /* Fondo de la barra */
+  border-bottom: 2px solid #e0e0e0; /* Línea decorativa */
+}
+
+body {
+  padding-top: 60px; /* Añade un margen para evitar que el contenido quede debajo de la barra */
+}
 /* TERMINA BARRA DE NAVEGACIÓN */
 
 
@@ -299,4 +315,113 @@ body.dark-mode .footer {
 
 /* TERMINA CARRUSEL*/
 /* ------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------ */*
+/* ------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* Estilo para la página "Nosotros" */
+.about-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.large-logo {
+  width: 200px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin: 20px 0;
+}
+
+.mission-values {
+  margin-top: 20px;
+}
+
+.mission-values h2 {
+  font-size: 24px;
+  color: #333333;
+}
+
+.mission-values p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.logo-container-nosotros {
+  display: flex; /* Activa flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+.large-logo {
+  width: 800px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------
+ */
+
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* Estilo general */
+
+
+/* Contenedor principal de proveedores */
+.providers {
+  padding: 20px;
+  text-align: center;
+}
+
+.providers h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Segmentos */
+.provider-segment {
+  margin: 20px 0;
+}
+
+.provider-segment h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+/* Lista de proveedores */
+.provider-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.provider-item {
+  flex: 1 1 calc(25% - 20px); /* Ajusta el tamaño según el contenedor */
+  background-color: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.provider-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.provider-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+.provider-logo {
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: auto; /* Mantiene la proporción */
+  display: block; /* Asegura que no se superponga con otros elementos */
+  margin: 0 auto 10px; /* Centra el logo y añade un margen inferior */
+  border-radius: 10px; /* Opcional: hace las esquinas redondeadas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: añade un efecto de sombra */
+}
